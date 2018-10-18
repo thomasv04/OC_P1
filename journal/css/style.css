@@ -1,0 +1,135 @@
+/**    
+color blue : #252839
+color grey : #677077
+color white : #b5b5b7
+color yellow : #f2b632
+**/
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #252839;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#title {
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    color: #b5b5b7;
+    font-size: 1.8vw;
+}
+
+.content {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+}
+
+#entree {
+    width: 80%;
+    margin: auto;
+    background: #677077;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+#entree p {
+    color: #d4d4d4;
+    font-size: 22px;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: justify;
+}
+
+#entree .date {
+    position: absolute;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    background: #f2b632;
+    border-radius: 50%;
+    font-weight: 100;
+    top: -25px;
+}
+
+#entree:nth-child(odd) .date {
+    left: -20px !important;
+}
+
+#entree:nth-child(even) .date {
+    right: -20px !important;
+}
+
+#entree .date h3 {
+    padding-top: 0.3vw;
+    margin: auto;
+}
+
+#entree .date span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+hr {
+    display: block;
+    margin-top: -25px;
+    border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, #252839, #f2b632, #252839);
+    background-image: -moz-linear-gradient(left, #252839, #f2b632, #252839);
+    background-image: -ms-linear-gradient(left, #252839, #f2b632, #252839);
+    background-image: -o-linear-gradient(left, #252839, #f2b632, #252839);
+    width: 50%;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+form div {
+    position: relative
+}
+
+form textarea {
+    width: 100%;
+    height: 200px;
+    background: #677077;
+    border-radius: 10px;
+    color: #d4d4d4;
+    font-size: 22px;
+    margin: auto;
+    padding: 20px 60px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    line-height: 35px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    resize: vertical;
+    border: none;
+}
+
+form button {
+    position: absolute;
+    text-align: center;
+    width: 155px;
+    height: 55px;
+    background: #f2b632;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    cursor: pointer;
+}
